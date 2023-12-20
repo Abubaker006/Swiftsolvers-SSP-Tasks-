@@ -1,0 +1,192 @@
+.featuresBox {
+  height: 90vh;
+}
+.headingBox {
+  margin-top: -0.8rem;
+  text-align: center;
+}
+.logo {
+  display: inline-block;
+  font-weight: 100;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  color: whitesmoke;
+  opacity: 1;
+  text-shadow: 12px 1px 48px rgba(0, 0, 0, 0.44);
+}
+.featuresBox__Main {
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.box1 {
+  display: flex;
+  flex: 0.5;
+  padding: 2px;
+  /* background-color: orange; */
+}
+.box2 {
+  display: flex;
+  flex: 2;
+
+  padding: 2px;
+  /* background-color: orangered; */
+}
+.box3 {
+  display: flex;
+  flex: 3;
+  padding: 2px;
+  /* background-color: yellow; */
+}
+.box1_linksColumn {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navLink {
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: whitesmoke;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.5;
+}
+.navLink:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.contentHeading {
+  margin-top: -1rem;
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 8px;
+  color: whitesmoke;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+.contentHeading:hover {
+  opacity: 1;
+  transform: scale(1.01);
+}
+.featureImage {
+  width: 80%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+}
+.featuresDescription {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.smartphoneIcon {
+  color: whitesmoke;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+.contactNumber {
+  color: whitesmoke;
+  opacity: 0.8;
+  font-weight: 100;
+  letter-spacing: 8px;
+  transition: all 0.2s ease-in-out;
+}
+.smartphoneIcon:hover {
+  opacity: 1;
+  transform: scale(1.01);
+}
+.contactNumber:hover {
+  opacity: 1;
+  transform: scale(1.01);
+  letter-spacing: 10px;
+}
+@media screen and (max-width: 550px) {
+  .featuresBox {
+    height: auto;
+  }
+  .logo {
+    margin-top: 6rem;
+    font-size: 2rem;
+  }
+  .featuresBox__Main {
+    display: inline; /* Change to a column layout for smaller screens. */
+  }
+  .box1 {
+    padding: 0 1rem;
+  }
+  .box2 {
+    margin-top: -18rem;
+    margin-left: 5rem;
+  }
+  .box3 {
+    width: 100%;
+    margin-top: -8rem;
+  }
+  .contentHeading {
+    opacity: 1;
+    text-align: center;
+  }
+  .featureImage {
+    width: 400px;
+    height: 385px;
+    border-radius: 10px;
+    opacity: 0.3; /* Adjust the opacity as desired. */
+    z-index: 250;
+  }
+}
+@media screen and (max-width: 450px) {
+  .featuresBox {
+    height: auto;
+  }
+  .logo {
+    font-size: 2rem;
+    margin-top: 6rem;
+  }
+  .box2 {
+    position: relative;
+  }
+  .Content__box2 {
+    margin-top: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .contentHeading {
+    opacity: 1;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .featureImage {
+    width: 300px;
+    height: 295px;
+    margin-left: 4.5rem;
+    border-radius: 10px;
+    opacity: 0.3; /* Adjust the opacity as desired. */
+    z-index: 250;
+    margin-top: 5rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .featuresBox {
+    height: auto;
+  }
+  .navLink {
+    margin-bottom: 0;
+  }
+  .contentHeading {
+    font-size: 2rem;
+    letter-spacing: 6px;
+  }
+}

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700");
+
+.box__teamComponent {
+  line-height: 1.4;
+  letter-spacing: 1px;
+  margin: 2px;
+  background-color: #5c5c5c;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 3px;
+  width: 25%;
+  height: 95%;
+  padding-bottom: 0.7rem;
+  box-shadow: 0px 13px 42px -14px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 13px 42px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 13px 42px -14px rgba(0, 0, 0, 0.75);
+}
+.imageBox {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image__imageBox {
+  margin-top: 4px;
+  object-fit: cover;
+  height: 250px;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0px 13px 42px -14px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 13px 42px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 13px 42px -14px rgba(0, 0, 0, 0.75);
+}
+.memberInformation {
+  text-align: left;
+  color: whitesmoke;
+  opacity: 1;
+  word-wrap: break-word;
+}
+.memberName {
+  letter-spacing: 1px;
+  padding-left: 3px;
+  font-weight: 100;
+  font-size: 1.5rem;
+  font-style: bold;
+}
+.memberRank {
+  letter-spacing: 1px;
+  margin-top: -0.8rem;
+  padding-left: 3px;
+  font-weight: 100;
+  font-size: 1rem;
+}
+.memberDescription {
+  padding: 4px 4px 0 4px;
+  margin-bottom: 1rem;
+  text-align: justify;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+.socialLink_Box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.socialLink {
+  color: white;
+  opacity: 0.7;
+  transition: all 0.2s ease-in-out;
+}
+.socialLink:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 850px) {
+  .teamComponent {
+    justify-content: space-around;
+    align-items: top;
+    height: auto;
+    overflow: hidden;
+  }
+  .box__teamComponent {
+    width: 50%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 550px) {
+  .box__teamComponent {
+    width: 80%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .box__teamComponent {
+    width: 85%;
+    height: auto;
+  }
+}

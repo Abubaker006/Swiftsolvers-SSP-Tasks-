@@ -1,0 +1,30 @@
+.teamComponent {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  height: auto;
+  margin-top: 5rem;
+  display: flex;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(224, 224, 224);
+}
+.heading_boxTeam {
+  display: block;
+  width: 90%;
+  text-align: center;
+}
+.heading_team {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2.3rem;
+  text-shadow: 8px 1px 9px rgba(0, 0, 0, 0.35);
+  transition: all 0.2s ease-in-out;
+}
+.heading_team:hover {
+  opacity: 0.8;
+  transform: scale(1.01);
+}

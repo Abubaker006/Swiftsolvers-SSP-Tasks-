@@ -1,0 +1,122 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 2px;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+}
+.navbar {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  margin-right: 3rem;
+  width: 3.7rem;
+  height: 3.7rem;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  z-index: 300;
+  box-shadow: 6px 5px 30px -8px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 6px 5px 30px -8px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 6px 5px 30px -8px rgba(0, 0, 0, 0.54);
+  transition: all 0.3s ease-in-out;
+}
+.navbar:hover {
+  transform: scale(1.1);
+}
+.navbar:active {
+  transform: scale(1);
+}
+.hamburger-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.headerOpen {
+  background-image: linear-gradient(147deg, #d7d7d7 0%, #353535 74%);
+  z-index: 290;
+  height: 100vh;
+  animation: navbarAnimation 0.5s ease-in-out;
+}
+
+.List {
+  width: 100%;
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+.listItems {
+  text-align: center;
+  width: 10rem;
+  margin: 1rem;
+  padding: 8px;
+  font-size: 1.5rem;
+  background-color: rgb(221, 221, 221);
+  border-radius: 2px;
+  text-decoration: none;
+  box-shadow: 6px 5px 30px -8px rgba(247, 247, 247, 0.54);
+  -webkit-box-shadow: 6px 5px 30px -8px rgba(247, 247, 247, 0.54);
+  -moz-box-shadow: 6px 5px 30px -8px rgba(247, 247, 247, 0.54);
+  transition: all 0.3s ease-in-out;
+  animation: navbarAnimation 1s ease-in-out;
+}
+.listItems:hover {
+  transform: scale(1.1);
+  text-decoration: underline #333;
+}
+.listItems:active {
+  transform: scale(0.95);
+}
+.NavLink {
+  color: #333;
+  text-decoration: none;
+}
+@keyframes navbarAnimation {
+  0% {
+    opacity: 0.2;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes LinkAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

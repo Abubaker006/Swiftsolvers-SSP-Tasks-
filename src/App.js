@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import { BrowserRouter } from "react-router-dom";
+//Navigate , Routes, Route
+import Navbar from "./components/Navbar/Navbar";
+import Features from "./components/Features/Features";
+import TeamCaller from "./compCaller/TeamCaller";
+import MidBox from "./components/MidBox/MidBox";
+import Footer from "./components/Footer/Footer";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Features />
+      <TeamCaller />
+      <MidBox />
+      <Footer />
+    </BrowserRouter>
   );
-}
-
+};
 export default App;
